@@ -4,7 +4,7 @@ int main(){
     char c1 = 'a';
     char c2 = 'b';
 
-    //essa soma retorna 195 pois é a soma da representação decimal dos caracteres 'a'(97) e 'b'(98)
+    //essa soma retorna 195 pois é a soma da representação decimal dos caracteres 'a'(97) e 'b'(98) em ASCII
     std::cout << "Somando 2 caracteres: a + b" << std::endl;
     std::cout << c1 + c2 << std::endl; 
 
