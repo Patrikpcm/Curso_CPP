@@ -29,6 +29,7 @@ switch (op){
         cout << "Resultado: " << (num1/num2) << endl;
         break;
     default:
+        cout << "Operação inexistente!" << endl;
         break;
 }
 return 0;
