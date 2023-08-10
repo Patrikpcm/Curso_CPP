@@ -56,5 +56,8 @@ int main(){
     foo(aux);
     cout << "Valor modificado pela função Foo(): " << aux[0] << endl;
 
+    //liberando a memória alocada para os ponteiros
+    delete[] vet;
+    delete[] aux;
     return 0;
 }
