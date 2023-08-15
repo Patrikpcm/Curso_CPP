@@ -19,7 +19,7 @@ int main(){
     */
     cout << "Tamanho vet, não funciona para alocações dinâmicas: " << sizeof(vet)/sizeof(int) << endl;
     cout << "Tamanho vet2: " << sizeof(vet2)/sizeof(int) << endl << endl;
-    cout << "Imprimindo valores do vetor não iniciado:" << endl;
+    cout << "Imprimindo valores do vetor(não inicializado):" << endl;
     cout << "|";
     for(int i = 0; i < sizeof((vet2))/sizeof(int); i++)
         cout << vet[i] << "|";
