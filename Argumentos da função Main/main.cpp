@@ -19,5 +19,9 @@ int main(int argc, char *argv[]){
     cout << "ponteiro [1] para o elemento [1]: " << *parray[1] << endl;
     cout << "ponteiro [2] para o elemento [2]: " <<  *parray[2] << endl;
 
+    for (int i=0; i<argc; i++){
+        cout << argv[i] << endl;
+    }
+
     return 0;
 }
