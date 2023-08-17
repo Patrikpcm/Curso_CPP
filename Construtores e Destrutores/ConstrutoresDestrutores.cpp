@@ -10,12 +10,13 @@ protected:
     double *filhos;
 
 public:
-//construtor da classe
+    //construtor da classe
     Pessoa(const char *nome, int idade){
         strcpy(this->nome, nome);
         this->idade = idade;
         parentes = new int[100];//alocando memória fora da pilha de execução
         filhos = new double[100];//alocando memória fora da pilha de execução
+        cout << "Entrou no CONSTRUTOR - "<< nome << endl;
     }
     char *getNome(){
         return nome;
@@ -29,7 +30,7 @@ public:
     Ele executa mesmo sem ser chamado
     */
     ~Pessoa(){  
-        cout << "Entrou no destrutor" << endl;
+        cout << "Entrou no DESTRUTOR - " << this->nome << endl;
         delete[] parentes;
         delete[] filhos;
     }
@@ -40,10 +41,14 @@ int main(){
     Com membros protegidos na classe eu não posso atribuir valores diretamente.
     Dessa forma preciso usar construtores e destrutores para a classe.
     */
-    Pessoa p("João", 30);
+    //Pessoa p("João", 30);
 
-    cout << "Nome: " << p.getNome() << endl;
-    cout << "idade: " << p.getIdade() << endl;
+    Pessoa pessoas[3] = {{"Patrik", 33},
+                        {"Luiz", 34},
+                        {"Gogola", 21}};
+
+    //cout << "Nome: " << pessoas.getNome() << endl;
+    //cout << "idade: " << pessoas.getIdade() << endl;
 
     return 0;
 }
