@@ -9,7 +9,12 @@ Cachorro é sempre um Animal
 Animal nem sempre é um cachorro
 */
 class Animal{
-protected: 
+ /*
+Membros protegidos podem ser usados pelas classes derivadas (herança).
+Diferente de membros privados que não transmitem suas características
+através da herança.
+*/
+protected://para cachorro usar esses atributos, eles devem ser protected e não private
     char *tipo;
     char *especie;
     bool voa;
