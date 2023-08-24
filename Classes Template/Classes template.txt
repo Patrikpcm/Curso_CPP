@@ -1,0 +1,4 @@
+Classes Template são classes que não tem o seu tipo de objeto definido (void, int, double, etc) e portanto
+trata os dados de forma abstrata, entretanto, parametrizados.
+
+Nesse exemplo vamos criar uma pilha que pode armazenar diferentes tipos de dados.
