@@ -1,0 +1,2 @@
+Testando saída de arquivo
+Aprendendo C++
