@@ -72,6 +72,12 @@ int bitwiseAnd(int N, int K) {
         for (b = 2; b <= N; b++){
             if(a<b & (a&b)<K){
                 max = (a & b) > max ? a & b : max;
+                /*
+                if((a&b) > max)
+                    max = a & b;
+              //else
+                   //max = max;
+                */
             }
         }
     }
